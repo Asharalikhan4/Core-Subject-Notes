@@ -13,21 +13,22 @@ An operating system is a software that manages computer hardware. The hardware m
 1. Process management
 2. Memory management
 3. Storage management
-4. Input-Output management
+4. Protection and Security
+5. Input-Output management
 
-## Process Management
+## 1. Process Management
 1. Creating and deleting user and system processes.
 2. Suspending and resuming processes.
 3. Process synchronization.
 4. Inter-process communication.
 5. Deadlock Handling.
 
-## Memory management
+## 2. Memory management
 1. Deciding which process and data to move into and out of memory.
 2. Keeping tracks of which part of memory are currently being used and by whom.
 3. Allocating and deallocating memory space as needed.
 
-## Storage management
+## 3. Storage management
 1. File-System Management
     - Creating and deleting files.
     - Creating and deleting directories to organize files.
@@ -39,10 +40,10 @@ An operating system is a software that manages computer hardware. The hardware m
     - Storage allocation
     - Disk Scheduling
 
-## Protection and Security
+## 4. Protection and Security
 The operating system uses password protection to protect user data and similar other techniques. It also prevents unauthorized access to programs and user data.
 
-## I/O System Management
+## 5. I/O System Management
 The module that keeps track of the status of devices is called the I/O traffic controller. Each I/O device has a device handler that resides in a separate process associated with that device.
 
 The I/O subsystem consists of -
