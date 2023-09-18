@@ -66,4 +66,4 @@ A process is a program in execution. For example, when we write a program in C o
 A process is an ‘active’ entity, instead of a program, which is considered a ‘passive’ entity. A single program can create many processes when run multiple times; for example, when we open a .exe or binary file multiple times, multiple instances begin (multiple processes are created).
 
 ## What does a process look like in memory?
-![The San Juan Mountains are beautiful!](/assets/processImage.jpg "San Juan Mountains")
+![](./assets/processImage.png "San Juan Mountains")
