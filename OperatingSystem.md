@@ -81,3 +81,11 @@ A process is an ‘active’ entity, instead of a program, which is considered a
 
 A process control block (PCB) contains information about the process, i.e. registers, quantum, priority, etc. The process table is an array of PCB’s, that means logically contains a PCB for all of the current processes in the system.
 ![](./assets/processControlBlockImage.png "San Juan Mountains")
+1. **Process state** – It stores the respective state of the process.
+2. **Pointer** – It is a stack pointer which is required to be saved when the process is switched from one state to another to retain the current position of the process.
+3. **Process number** – Every process is assigned with a unique id known as process ID or PID which stores the process identifier.
+4. **Program counter** – It stores the counter which contains the address of the next instruction that is to be executed for the process.
+5. **Register** – These are the CPU registers which includes: accumulator, base, registers and general purpose registers.
+6. **CPU Scheduling Information** - It stores the scheduling information
+7. **Memory limits** – This field contains the information about memory management system used by operating system. This may include the page tables, segment tables etc.
+8. **Open files list** – This information includes the list of files opened for a process.
