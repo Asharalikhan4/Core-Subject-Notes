@@ -170,3 +170,14 @@ Six state process model
 - In this way, no CPU time is wasted by the system waiting for the I/O task to be completed. Therefore, the ultimate goal of multi programming is to keep the CPU busy as long as there are processes ready to execute. This way, multiple programs can be executed on a single processor by executing a part of a program at one time, a part of another program after this, then a part of another program and so on, hence executing multiple programs. Hence, the CPU never remains idle.
 In the image below, program A runs for some time and then goes to waiting state. In the mean time program B begins its execution. So the CPU does not waste its resources and gives program B an opportunity to run.
 ![](./assets/multiProgrammingImage.png "San Juan Mountains")
+
+# Multitasking
+- Multitasking is a logical explanation of multiprogramming.
+- Multitasking operating systems are known as time sharing systems.
+- Each process is assigned some specific quantum of time for which a process is meant to execute.
+- As soon as time quantum of one process expires, another process begins its execution.
+- The user is given the illusion that multiple processes/ tasks are executing simultaneously.
+- Actually one process/ task is executing at a particular instant of time but context switch is occurring so fast that the user is able to interact with each program.In a more general sense, multitasking refers to having multiple programs, processes, tasks, threads running at the same time. This term is used in modern operating systems when multiple tasks share a common processing resource (e.g., CPU and Memory).
+![](./assets/multiTaskingImage.png "San Juan Mountains")
+- As depicted in the above image, At any time the CPU is executing only one task while other tasks are waiting for their turn. The illusion of parallelism is achieved when the CPU is reassigned to another task. i.e all the three tasks A, B and C are appearing to occur simultaneously because of time sharing.
+- So for multitasking to take place, firstly there should be multiprogramming i.e. presence of multiple programs ready for execution. And secondly the concept of time sharing.
