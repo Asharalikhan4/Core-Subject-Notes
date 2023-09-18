@@ -51,12 +51,11 @@ The I/O subsystem consists of -
 - A general device driver interface.
 
 # Process Concept
-Early Computer - One program at a time
+Early Computer - One program at a time<br/>
 Modern Computer - Multiprogramming, Multitasking
 
 **Process:** A process is a program in execution.
 
 A process includes
-
 1. Program Counter
 2. Content of the processor’s register.
