@@ -64,3 +64,6 @@ A process includes
 ## Program vs Process
 A process is a program in execution. For example, when we write a program in C or C++ and compile it, the compiler creates binary code. The original code and binary code are both programs. When we actually run the binary code, it becomes a process.
 A process is an ‘active’ entity, instead of a program, which is considered a ‘passive’ entity. A single program can create many processes when run multiple times; for example, when we open a .exe or binary file multiple times, multiple instances begin (multiple processes are created).
+
+## What does a process look like in memory?
+![The San Juan Mountains are beautiful!](/assets/processImage.jpg "San Juan Mountains")
