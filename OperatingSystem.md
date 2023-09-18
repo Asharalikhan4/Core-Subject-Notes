@@ -159,3 +159,14 @@ Six state process model
 9. **Blocked → Suspend:** When the Blocked queue gets filled with the processes then some of the processes from the blocked queue will be moved into the Suspend state. Suspend state exists in the secondary memory by using the concept of virtual memory.
 10. **Suspend → Blocked:** When the Space gets available into the Blocked state then the process that has been put into the Suspend state will be moved back into the Blocked State.
 11. **Suspend → Ready:** When the event has occurred for the process that has been waiting into the suspend state in the secondary memory then it will be directly moved into the Ready state.
+
+# Non-Multi Programming System
+1. Once CPU is allotted to a process it can’t be allocated to another process until that process complete it’s task.
+2. As soon as process leaves the CPU and goes for some other task (say I/O), the CPU becomes idle.
+3. Now it has a drawback that CPU remain idle.Also, other jobs which are waiting to be executed might not get a chance to execute because the CPU is still allocated to earlier job.
+
+# Multi Programming System
+- In a multi-programmed system, as soon as one job goes for an I/O task, the Operating System interrupts that job, chooses another job from the job pool (waiting queue), gives CPU to this new job and starts its execution. The previous job keeps doing its I/O operation while this new job does CPU bound tasks. Now say the second job also goes for an I/O task, the CPU chooses a third job and starts executing it. As soon as a job completes its I/O operation and comes back for CPU tasks, the CPU is allocated to it.
+- In this way, no CPU time is wasted by the system waiting for the I/O task to be completed. Therefore, the ultimate goal of multi programming is to keep the CPU busy as long as there are processes ready to execute. This way, multiple programs can be executed on a single processor by executing a part of a program at one time, a part of another program after this, then a part of another program and so on, hence executing multiple programs. Hence, the CPU never remains idle.
+In the image below, program A runs for some time and then goes to waiting state. In the mean time program B begins its execution. So the CPU does not waste its resources and gives program B an opportunity to run.
+![](./assets/multiProgrammingImage.png "San Juan Mountains")
