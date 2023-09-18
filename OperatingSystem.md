@@ -98,7 +98,7 @@ This model consists of five states i.e, running, ready, blocked, new, and exit. 
 
 If the process has timed out, then the process again goes to the ready state as the process has not completed its execution. If a process has an event wait condition then the process goes to the blocked state and after that to the ready state. If both conditions are true, then the process goes to running state after dispatching after which the process gets released and at last it is terminated.
 ![](./assets/5StateProcessModelImage.png "San Juan Mountains")
-### **Possible State Transitions**
+### Possible State Transitions
 
 There can be various events that lead to a state transition for a process. The possible state transitions are given below:
 
@@ -110,3 +110,52 @@ There can be various events that lead to a state transition for a process. The p
 6. **Running -> Blocked:** A process is put in the blocked state if it requests for something it is waiting. Like, a process may request some resources that might not be available at the time or it may be waiting for an I/O operation or waiting for some other process to finish before the process can continue.
 7. **Blocked -> Ready:** A process moves from blocked state to the ready state when the event for which it has been waiting.
 8. **Ready -> Exit:** This transition can exist only in some cases because, in some systems, a parent may terminate a child’s process at any time.
+
+## Need for Six-State Process Model:
+The Five-State process model was a standard model consisting of the five main states of the process life-cycle i.e.,
+
+1. Running
+2. Ready
+3. Blocked/Waiting
+4. New
+5. Exit/Termination.
+
+But there was a problem that may occur in these models, Let’s discuss the problem with an example.
+
+Suppose, there is a scenario where lots of processes are coming for execution and requesting for CPU and all the processes are I/O intensive processes as we all know that the I/O task of the process is handled by the I/O processor and the process resides in the blocked/waiting state while executing on the I/O processor and CPU is way faster than the I/O processor. So all these processes are waiting in a queue inside the blocked/waiting state for the I/O processor.
+
+As we also know that this blocked/waiting state shares a common space with the Ready queue in the RAM. i.e. Both of these queues reside inside the RAM. Now, suppose the scenario where the RAM is filled by the Blocked/Waiting queue as all the process that is coming is I/O intensive process. In this scenario, our system will not be able to load any New process into the Ready queue as the RAM is already filled by these Blocked/Waiting state queues and due to these a New process cannot be able to load into the Ready queue and meanwhile, our CPU will also remain idle at that time and it will directly impact the performance of the system and as our main goal is to use the CPU efficiently, this problem should be solved.
+
+To overcome these problems, the concept of [“Virtual Memory”](https://www.geeksforgeeks.org/virtual-memory-in-operating-system/) is used and the Six-State process model is introduced with slight changes in the Five-State process model.
+
+## States present in these models:
+
+1. New State
+2. Ready State
+3. Running State
+4. Blocked/Waiting State
+5. Exit/Termination State
+
+And the new state that is added to these models is:
+
+6. Suspend State
+
+In these models, all the processes of execution will be exactly the same as in the Five-State Process Model, and the additional state of these models is only used when the blocked/waiting queue is full. Suppose, as we have discussed in the example earlier that lots of I/O intensive process comes for execution at the same time and our blocked/waiting queue gets filled at that time we will move all the other process into the secondary memory and will load it whenever required or when the space gets empty by using the concept of virtual memory.
+
+![](./assets/6StateProcessModelImage.png "San Juan Mountains")
+
+Six state process model
+
+## Possible State Transitions:
+
+1. **Null → New:** A new process is created for execution.
+2. **New → Ready**: The newly created process which is ready to execute on the CPU and is waiting for it to get free is moved here in the ready state. There can be multiple processes in these states at a time.
+3. **Ready → Running:** The Selected process is moved into the Running state where it will get the CPU for executing its tasks. There can be at most one process in the Running state at a time.
+4. **Running → Exit:** The process whose execution gets over will be terminated and moved into the Exit state.
+5. **Running → Ready:** When the process has reached its maximum time limit of execution or when a high priority process came for execution, the process currently present in the running state will be moved into the ready state.
+6. **Running → Blocked**: When the process is waiting for some event to occur the process will be moved to the Blocked state from the Running state.
+7. **Blocked → Ready:** A process will be moved back into the ready state when the event that it has been waiting for occurs.
+8. **Ready → Exit**: This will only happen when the parent process of the current process gets terminated or it requests explicitly to terminate the child process.
+9. **Blocked → Suspend:** When the Blocked queue gets filled with the processes then some of the processes from the blocked queue will be moved into the Suspend state. Suspend state exists in the secondary memory by using the concept of virtual memory.
+10. **Suspend → Blocked:** When the Space gets available into the Blocked state then the process that has been put into the Suspend state will be moved back into the Blocked State.
+11. **Suspend → Ready:** When the event has occurred for the process that has been waiting into the suspend state in the secondary memory then it will be directly moved into the Ready state.
