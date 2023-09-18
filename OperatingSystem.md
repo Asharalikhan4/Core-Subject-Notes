@@ -89,3 +89,24 @@ A process control block (PCB) contains information about the process, i.e. regis
 6. **CPU Scheduling Information** - It stores the scheduling information
 7. **Memory limits** – This field contains the information about memory management system used by operating system. This may include the page tables, segment tables etc.
 8. **Open files list** – This information includes the list of files opened for a process.
+
+# Process State Transition
+A process is a program under execution that consists of a number of elements including, program code and a set of data. To execute a program, a process has to be created for that program. Here the process may or may not run but if it is in a condition of running then that has to be maintained by the OS for appropriate progress of the process to be gained.
+
+## Five-State Process Model
+This model consists of five states i.e, running, ready, blocked, new, and exit. The model works when any new job/process occurs in the queue, it is first admitted in the queue after that it goes in the ready state. Now in the Ready state, the process goes in the running state. In the running state, a process has two conditions i.e., either the process goes to the event wait or the process gets a time-out.
+
+If the process has timed out, then the process again goes to the ready state as the process has not completed its execution. If a process has an event wait condition then the process goes to the blocked state and after that to the ready state. If both conditions are true, then the process goes to running state after dispatching after which the process gets released and at last it is terminated.
+![](./assets/5StateProcessModelImage.png "San Juan Mountains")
+### **Possible State Transitions**
+
+There can be various events that lead to a state transition for a process. The possible state transitions are given below:
+
+1. **Null -> New:** A new process is created for the execution of a process.
+2. **New -> Ready:** The system will move the process from new to ready state and now it is ready for execution. Here a system may set a limit so that multiple processes can’t occur otherwise there may be a performance issue.
+3. **Ready -> Running:** The OS now selects a process for a run and the system chooses only one process in a ready state for execution.
+4. **Running -> Exit:** The system terminates a process if the process indicates that is now completed or if it has been aborted.
+5. **Running -> Ready:** The reason for which this transition occurs is that when the running process has reached its maximum running time for uninterrupted execution. An example of this can be a process running in the background that performs some maintenance or other functions periodically.
+6. **Running -> Blocked:** A process is put in the blocked state if it requests for something it is waiting. Like, a process may request some resources that might not be available at the time or it may be waiting for an I/O operation or waiting for some other process to finish before the process can continue.
+7. **Blocked -> Ready:** A process moves from blocked state to the ready state when the event for which it has been waiting.
+8. **Ready -> Exit:** This transition can exist only in some cases because, in some systems, a parent may terminate a child’s process at any time.
