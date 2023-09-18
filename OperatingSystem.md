@@ -4,6 +4,7 @@ An operating system is a software that manages computer hardware. The hardware m
 1. An operating system is a program that controls the execution of application programs and acts as an interface between the user of a computer and the computer hardware.
 2. A more common definition is that the operating system is the one program running at all times on the computer (usually called the kernel), with all else being application programs.
 3. An operating system is concerned with the allocation of resources and services, such as memory, processors, devices, and information. The operating system correspondingly includes programs to manage these resources, such as a traffic controller, a scheduler, a memory management module, I/O programs, and a file system.
+
 ## Goal of Operating System
 1. Convenience( Primary goal)
 2. Efficiency (Secondary goal)
@@ -48,3 +49,14 @@ The I/O subsystem consists of -
 
 - A memory Management component that includes buffering, caching and spooling.
 - A general device driver interface.
+
+# Process Concept
+Early Computer - One program at a time
+Modern Computer - Multiprogramming, Multitasking
+
+**Process:** A process is a program in execution.
+
+A process includes
+
+1. Program Counter
+2. Content of the processor’s register.
