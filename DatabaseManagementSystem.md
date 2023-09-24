@@ -4,6 +4,7 @@
 Word 'Data' is originated from the word 'datum' that means 'single piece of information.' It is plural of the word datum.
 
 In computing, Data is information that can be translated into a form for efficient movement and processing. Data is interchangeable.
+
 **Database -** A database is an organized collection of data, so that it can be easily accessed and managed.
 
 You can organize data into tables, rows, columns, and index it to make it easier to find relevant information.
