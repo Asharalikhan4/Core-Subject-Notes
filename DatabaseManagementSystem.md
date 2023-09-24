@@ -50,3 +50,9 @@ Role and Duties of Database Administrator (DBA) :
 5. Database implementation – DBA implements DBMS and checks database loading at the time of its implementation.
 6. Query processing performance – DBA enhances query processing by improving speed, performance, and accuracy.
 7. Tuning Database Performance – If the user is not able to get data speedily and accurately then it may lose organization’s business. So by tuning SQL commands DBA can enhance the performance of the database.
+
+# Describe Database Tier-2 and Tier-3 Architecture
+1. **Two-Tier Database Architecture –** In two-tier, the application logic is either buried inside the User Interface on the client or within the database on the server (or both). With two-tier client/server architectures, the user system interface is usually located in the user’s desktop environment and the database management services are usually in a server that is a more powerful machine that services many clients.
+
+2. **Three-Tier Database Architecture –** In three-tier, the application logic or process lives in the middle-tier, it is separated from the data and the user interface. Three-tier systems are more scalable, robust and flexible. In addition, they can integrate data from multiple sources. In the three-tier architecture, a middle tier was added between the user system interface client environment and the database management server environment. There are a variety of ways of implementing this middle tier, such as transaction processing monitors, message servers, or application servers.
+![]("./DatabaseManagementSystemAssets/Tier-2:Tier-3.png "San Juan Mountains")
