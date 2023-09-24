@@ -58,17 +58,14 @@ Role and Duties of Database Administrator (DBA) :
 ![](./assets/Tiers.png "San Juan Mountains")
 
 # Database languages
-Structured Query Language(SQL) as we all know is the database language by the use of which we can perform certain operations on the existing database and also we can use this language to create a database. SQL uses certain commands like CREATE, DROP, INSERT, etc. to carry out the required tasks. 
+Structured Query Language(SQL) as we all know is the database language by the use of which we can perform certain operations on the existing database and also we can use this language to create a database. SQL uses certain commands like CREATE, DROP, INSERT, etc. to carry out the required tasks.SQL commands are like instructions to a table. It is used to interact with the database with some operations. It is also used to perform specific tasks, functions, and queries of data. SQL can perform various tasks like creating a table, adding data to tables, dropping the table, modifying the table, set permission for users.
 
-SQL commands are like instructions to a table. It is used to interact with the database with some operations. It is also used to perform specific tasks, functions, and queries of data. SQL can perform various tasks like creating a table, adding data to tables, dropping the table, modifying the table, set permission for users.
-
-These SQL commands are mainly categorized into five categories: 
-
-DDL – Data Definition Language
-DQL – Data Query Language
-DML – Data Manipulation Language
-DCL – Data Control Language
-TCL – Transaction Control Language
+These SQL commands are mainly categorized into five categories:<br/>
+DDL – Data Definition Language<br/>
+DQL – Data Query Language<br/>
+DML – Data Manipulation Language<br/>
+DCL – Data Control Language<br/>
+TCL – Transaction Control Language<br/>
 
 DDL (Data Definition Language)
 DDL or Data Definition Language actually consists of the SQL commands that can be used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in the database. DDL is a set of SQL commands used to create, modify, and delete database structures but not data. These commands are normally not used by a general user, who should be accessing the database via an application.
