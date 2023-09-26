@@ -132,3 +132,45 @@ SAVEPOINT: Sets a save point within a transaction.
 
 Syntax:
 SAVEPOINT SAVEPOINT_NAME;  
+
+# Difference between the DBMS and RDBMS
+[Click Here for Article](https://www.geeksforgeeks.org/difference-between-rdbms-and-dbms/)
+
+# Degree of relation
+There are three types of relationships that can exist between two entities.
+An entity-relationship (ER) diagram can be created based on these three types, which are listed below:
+1. **one-to-one relationship:** In relational database design, a one-to-one (1:1) relationship exists when zero or one instance of entity A can be associated with zero or one instance of entity B, and zero or one instance of entity B can be associated with zero or one instance of entity A. (abbreviated 1:1)
+2. **one-to-many relationship:** (abbreviated 1:N) In relational database design, a one-to-many (1:N) relationship exists when, for one instance of entity A, there exists zero, one, or many instances of entity B; but for one instance of entity B, there exists zero or one instance of entity A.
+3. **many-to-many relationship:** In relational database design, a many-to-many (M:N) relationship exists when, for one instance of entity A, there exists zero, one, or many instances of entity B; and for one instance of entity B, there exists zero, one, or many instances of entity A. (abbreviated M:N)
+
+# Keys in Database
+[Click here for Article](https://www.geeksforgeeks.org/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/)
+
+# Relational Operation
+[Click here for Article](https://www.guru99.com/relational-algebra-dbms.html)
+
+# What is SQL
+- SQL stands for Structured Query Language.
+- SQL lets you access and manipulate databases.
+- SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for - Standardization (ISO) in 1987.
+- SQL is a standard language for accessing and manipulating databases.
+
+# What Can SQL do?
+- SQL can execute queries against a database
+- SQL can retrieve data from a database
+- SQL can insert records in a database
+- SQL can update records in a database
+- SQL can delete records from a database
+- SQL can create new databases
+- SQL can create new tables in a database
+- SQL can create stored procedures in a database
+- SQL can create views in a database
+- SQL can set permissions on tables, procedures, and views
+
+# What is the difference between the SQL and MySQL?
+[Click here for Article](https://www.interviewbit.com/blog/sql-vs-mysql/)
+
+# Important Keywords in SQL
+[Click here for Article](https://www.educba.com/sql-keywords/)
+[Sql CheetSheet](https://www.educba.com/cheat-sheet-sql/?source=leftnav)
+

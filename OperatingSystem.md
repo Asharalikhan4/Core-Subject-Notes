@@ -191,3 +191,40 @@ Example – Suppose in the OS there (N) numbers of processes are stored in a Pro
 
 # Process Control Block
 So, the Process Control block(PCB) is also known as a Task Control Block. it represents a process in the Operating System. A process control block (PCB) is a data structure used by a computer to store all information about a process. It is also called the descriptive process. When a process is created (started or installed), the operating system creates a process manager.
+
+# Context Switching Cases
+
+So basically context switching can be applicable to triggered by various events, and properties in OS. which contains some major triggers as-
+
+1. **Interrupt –** To handle the interrupt OS performs a context switch to the handler to handle an interrupt and switch back to the origin process.
+2. **Multitasking –** Context switching is the hallmark of multitasking. when various processes are running on the system then OS switches allow each process to execute for a particular time period, that time is known as a time slice.
+3. **System Calls** – When a process makes any system calls, the OS switches the mode of the kernel and saves that process in context, and executes the system call.
+4. **Kernel/User Switch –** This trigger is used when the OS needed to switch between the user mode and kernel mode.
+- State Diagram of Context Switching
+
+![](./assets/contextSwitch.png "San Juan Mountains")
+
+# Working Process Context Switching
+
+So the context switching of two processes, the priority-based process occurs in the ready queue of the process control block. These are the following steps.
+
+- The state of the current process must be saved for rescheduling.
+- The process state contains records, credentials, and operating system-specific information stored on the PCB or switch.
+- The PCB can be stored in a single layer in kernel memory or in a custom OS file.
+- A handle has been added to the PCB to have the system ready to run.
+- The operating system aborts the execution of the current process and selects a process from the waiting list by tuning its PCB.
+- Load the PCB’s program counter and continue execution in the selected process.
+- Process/thread values can affect which processes are selected from the queue, this can be important.
+
+**Key point -**
+
+- When an interrupt occurs, running process suspends and it can be resumed later.
+- The system needs to save the context of the process currently running on the CPU so that it can restore that context when its processing is done.
+- The context is represented in the PCB of the process; it includes the value of the CPU registers, the process state, and memory management information.
+- Switching the CPU to new process requires performing a state save of the current process and a state store of the different process. This task is known as context switch.
+- When a context switch occurs, the kernel saves the context of the old process in its PCB and loads the saved context of the new process scheduled to run.
+- Context switch time is pure overhead.
+- Its speed varies from machine to machine, depending on the memory speed, the number of registers that must be copied and the existence of special instructions.
+- Context-switch times are highly dependent on hardware support.
+- If system consist multiple sets of registers then context switch, simply requires changing the pointer to the current register set.
+- But if there are more active processes than there are register sets, the system resorts to copying register data to and from memory, as before.
