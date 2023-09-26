@@ -230,21 +230,7 @@ So the context switching of two processes, the priority-based process occurs in 
 - But if there are more active processes than there are register sets, the system resorts to copying register data to and from memory, as before.
 
 # What is a Thread?
-Within a program, a thread is a separate execution path. It is a lightweight process that the operating system can schedule and run concurrently with other threads. The operating system creates and manages threads, and they share the same memory and resources as the program that created them. This enables multiple threads to collaborate and work efficiently within a single program.
+Within a program, a thread is a separate execution path. It is a lightweight process that the operating system can schedule and run concurrently with other threads. The operating system creates and manages threads, and they share the same memory and resources as the program that created them. This enables multiple threads to collaborate and work efficiently within a single program. A thread is a single sequence stream within a process. Threads are also called as **lightweight processes** as it possess some of the properties of processes. Each thread belongs to exactly one process. In operating system that support multithreading, process can consist of many threads. These threads run in parallel improving the application performance. Each such thread has its own CPU state and stack, but they share the address space of the process and the environment. Threads can share common data so they do not need to use inter-process communication. Like the processes, threads also have states like ready, executing, blocked etc. priority can be assigned to the threads just like process and highest priority thread is scheduled first. Each thread has its own Thread Control Block (TCB). Like process, context switch occurs for the thread and register contents are saved in (TCB). As threads share the same address space and resources, synchronization is also required for the various activities of the thread.
 
-A thread is a single sequence stream within a process. Threads are also called as **lightweight processes** as it possess some of the properties of processes. Each thread belongs to exactly one process.
-
-In operating system that support multithreading, process can consist of many threads.
-
-These threads run in parallel improving the application performance.
-
-Each such thread has its own CPU state and stack, but they share the address space of the process and the environment.
-
-Threads can share common data so they do not need to use inter-process communication.
-
-Like the processes, threads also have states like ready, executing, blocked etc. priority can be assigned to the threads just like process and highest priority thread is scheduled first.
-
-Each thread has its own Thread Control Block (TCB). Like process, context switch occurs for the thread and register contents are saved in (TCB).
-
-As threads share the same address space and resources, synchronization is also required for the various activities of the thread.
-
+# What is Multithreading?
+A thread is also known as lightweight process. The idea is to achieve parallelism by dividing a process into multiple threads. For example, in a browser, multiple tabs can be different threads. MS Word uses multiple threads: one thread to format the text, another thread to process inputs, etc. Multithreading is a technique used in operating systems to improve the performance and responsiveness of computer systems. Multithreading allows multiple threads (i.e., lightweight processes) to share the same resources of a single process, such as the CPU, memory, and I/O devices.
