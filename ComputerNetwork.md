@@ -96,7 +96,7 @@ Generally, there are two notations in which IP address is written, dotted decima
 2. There are no zeroes preceding the value in any segment (054 is wrong, 54 is correct).
 
 # Casting
-## Types of Casting:
+### Types of Casting:
 1. UNICAST
 2. BROADCAST
     1. Limited Broadcast
@@ -129,4 +129,40 @@ One important protocol of this class in Computer Networks is Address Resolution 
 
 **Multicast:**
 
-In multicasting, one/more senders and one/more recipients participate in data transfer traffic. In this method traffic recline between the boundaries of unicast (one-to-one) and broadcast (one-to-all). Multicast lets server’s direct single copies of data streams that are then simulated and routed to hosts that request it. IP multicast requires support of some other protocols like IGMP (Internet Group Management Protocol), Multicast routing for its working. Also in Classful IP addressing Class D is reserved for multicast groups. 
+In multicasting, one/more senders and one/more recipients participate in data transfer traffic. In this method traffic recline between the boundaries of unicast (one-to-one) and broadcast (one-to-all). Multicast lets server’s direct single copies of data streams that are then simulated and routed to hosts that request it. IP multicast requires support of some other protocols like IGMP (Internet Group Management Protocol), Multicast routing for its working. Also in Classful IP addressing Class D is reserved for multicast groups.
+
+# Types of IP address
+### There are two types of IP addresses:
+1. Private
+2. Public
+
+- Private IP address are used in LAN.
+- Public IP address are used over Internet.
+
+- Range of IP addresses:
+
+1. Range of Private IP addresses:
+- 10.0.0.0 – 10.255.255.255, 
+- 172.16.0.0 – 172.31.255.255, 
+- 192.168.0.0 – 192.168.255.255
+
+2. Range of Public IP addresses:
+All Other IP addresses other than Private IP addresses.
+
+- Scope of IP addresses:
+    - Private has scope of Local upto LAN.
+    - Public has scope of global.
+
+### Working of IP addresses:
+The working of IP addresses is similar to other languages. It can also use some set of rules to send information. Using these protocols we can easily send, receive data or files to the connected devices. There are several steps behind the scenes. Let us look at them
+
+- Your device directly requests your Internet Service Provider which then grants your device access to the web.
+- And an IP Address is assigned to your device from the given range available.
+- Your internet activity goes through your service provider, and that they route it back to you, using your IP address.
+- Your IP address can change. For example, turning your router on or off can change your IP Address.
+- When you are out from your home location your home IP address doesn’t accompany you. It changes as you change the network of your device.
+
+Why use Private IP Address:
+
+- The purpose of Private IP addresses is to use IP addresses.
+- In every LAN network Private IP is used,same Private address can be used in other LANs because the scope of the LAN is local
