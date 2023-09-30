@@ -60,6 +60,22 @@ Example:-172.16.30.56
 Example : 11001100.01010101.10101010.00001111
 3. Hexadecimal representation:- It is represented by hexadecimal number from 0-9 and A-F, where octets are separated by '.'.
 Example: 82 39 1E 38
+
 ![](./assets/IpAddress.png "San Juan Mountains")
 
+# Classful IP addressing Part - 1
 
+## Introduction To Binary Number System
+
+- 1 bit - 0 or 1
+- 1 byte - 8 bits
+- 1kb - 1024 bytes =2^10
+- 1mb - 1024 kb= 2^20
+- 1gb - 1024 mb=2^30
+- 1tb - 1024 gb=2^40
+
+![](./assets/bitByte.png "San Juan Mountains")
+
+IP address is an address having information about how to reach a specific host, especially outside the LAN. An IP address is a 32 bit unique address having an address space of 2^32.
+**Examples:** Generally, there are two notations in which IP address is written, dotted decimal notation and hexadecimal notation.
+Dotted Decimal Notation:
