@@ -115,12 +115,15 @@ Broadcasting transfer (one-to-all) techniques can be classified into two types :
 
 **Limited Broadcasting:**
 Suppose you have to send stream of packets to all the devices over the network that you reside, this broadcasting comes handy. For this to achieve, it will append 255.255.255.255 (all the 32 bits of IP address set to 1) called as Limited Broadcast Address in the destination address of the datagram (packet) header which is reserved for information transfer to all the recipients from a single client (sender) over the network.
+
 ![](./assets/LimitedCast.png "San Juan Mountains")
 
 
 **Direct Broadcasting:**
 This is useful when a device in one network wants to transfer packet stream to all the devices over the other network. This is achieved by translating all the Host ID part bits of the destination address to 1, referred as Direct Broadcast Address in the datagram header for information transfer.
+
 ![](./assets/BroadCast.png "San Juan Mountains")
+
 This mode is mainly utilized by television networks for video and audio distribution.
 One important protocol of this class in Computer Networks is Address Resolution Protocol (ARP) that is used for resolving IP address into physical address which is necessary for underlying communication. 
 
