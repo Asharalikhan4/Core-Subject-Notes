@@ -77,5 +77,6 @@ Example: 82 39 1E 38
 ![](./assets/bitByte.png "San Juan Mountains")
 
 IP address is an address having information about how to reach a specific host, especially outside the LAN. An IP address is a 32 bit unique address having an address space of 2^32.
+
 **Examples:** Generally, there are two notations in which IP address is written, dotted decimal notation and hexadecimal notation.
 Dotted Decimal Notation:
