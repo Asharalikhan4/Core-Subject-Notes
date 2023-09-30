@@ -21,12 +21,14 @@ A network ID or NetID is the fragment of IP address that classifies the network 
 In dotted-decimal representation, an IP address is divided into four octets and based on which class the IP address belongs to its octets are further divided into network ID and HOST ID.
 
 For Class A first octet represents network ID as the prefix of the first octet is 0, it uses the remaining 7 bits for network ID, for Class B first and second octets represent network ID the prefix for class B is 10 so it uses the remaining 14 bits for network ID, for Class C first, second and third octet represents network ID the prefix of class C is 110 so it uses the remaining 21 bits for network ID, Class D, and Class E are reserved.
+
 ![](./assets/NetworkAndHost.png "San Juan Mountains")
 
 
 
 **Host ID:**
 It is the fragment of an IP address that uniquely classifies a host on a specified TCP/IP network. A host ID can be found simply by ANDing the IP address in binary form with its respective default subnet mask (in binary form). The other fragment of an IP address is the network ID, which identifies the network to which the host belongs.
+
 ![](./assets/HostID.png "San Juan Mountains")
 
 
