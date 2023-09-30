@@ -141,13 +141,13 @@ In multicasting, one/more senders and one/more recipients participate in data tr
 
 - Range of IP addresses:
 
-1. Range of Private IP addresses:
-- 10.0.0.0 – 10.255.255.255, 
-- 172.16.0.0 – 172.31.255.255, 
-- 192.168.0.0 – 192.168.255.255
+    1. Range of Private IP addresses:
+        - 10.0.0.0 – 10.255.255.255, 
+        - 172.16.0.0 – 172.31.255.255, 
+        - 192.168.0.0 – 192.168.255.255
 
-2. Range of Public IP addresses:
-All Other IP addresses other than Private IP addresses.
+    2. Range of Public IP addresses:
+    All Other IP addresses other than Private IP addresses.
 
 - Scope of IP addresses:
     - Private has scope of Local upto LAN.
