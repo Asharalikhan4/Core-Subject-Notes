@@ -13,8 +13,8 @@ Structure of IP Address:
 - Each number on the set may range from 0 to 255.
 - Total IP addresses range ranges from 0.0.0.0 to 255.255.255.255.
 - IP addresses are basically divided into two parts:
-1. Network ID
-2. Host ID
+    1. Network ID
+    2. Host ID
 
 **Network ID:**
 A network ID or NetID is the fragment of IP address that classifies the network for a specified host i.e., it tells us which network the host belongs to, generally comprised of one to up to four octets in dotted-decimal representation. 
