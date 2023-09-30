@@ -234,3 +234,12 @@ Within a program, a thread is a separate execution path. It is a lightweight pro
 
 # What is Multithreading?
 A thread is also known as lightweight process. The idea is to achieve parallelism by dividing a process into multiple threads. For example, in a browser, multiple tabs can be different threads. MS Word uses multiple threads: one thread to format the text, another thread to process inputs, etc. Multithreading is a technique used in operating systems to improve the performance and responsiveness of computer systems. Multithreading allows multiple threads (i.e., lightweight processes) to share the same resources of a single process, such as the CPU, memory, and I/O devices.
+
+# Introduction to CPU Scheduling
+Scheduling of processes/work is done to finish the work on time. **CPU Scheduling** is a process that allows one process to use the CPU while another process is delayed (in standby) due to unavailability of any resources such as I / O etc, thus making full use of the CPU. The purpose of CPU Scheduling is to make the system more efficient, faster, and fairer.
+
+- In a single processor system, only one processor can run at a time; any others must wait until the CPU is free and can be rescheduled.
+- Non-multiprogrammed system, once CPU is allotted to process it can’t be allocated to another process until a process complete it’s task. All this waiting is wasted; no useful work is accomplished.
+- With multiprogramming, we try to use this time productively. Several processes are kept in memory at one time. When one process has to wait , the operating system takes the CPU away from that process and gives the CPU to another process. This pattern continues. Everytime one process leaves the CPU, another process can take over the use of the CPU.
+- By switching the CPU among processes, the operating system can make the computer more productive.
+- CPU scheduling is the basis of multiprogramming operating systems.
