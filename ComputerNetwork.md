@@ -9,15 +9,15 @@ The length of an IPv4 address is 32-bits, hence, we have 232 IP addresses availa
 
 Structure of IP Address:
 
-IP addresses are displayed as a set of 4 numbers.
-Each number on the set may range from 0 to 255.
-Total IP addresses range ranges from 0.0.0.0 to 255.255.255.255.
-IP addresses are basically divided into two parts:
+- IP addresses are displayed as a set of 4 numbers.
+- Each number on the set may range from 0 to 255.
+- Total IP addresses range ranges from 0.0.0.0 to 255.255.255.255.
+- IP addresses are basically divided into two parts:
 
-a. Network ID
-b. Host ID
+1. Network ID
+2. Host ID
 
-Network ID:
+**Network ID:**
 A network ID or NetID is the fragment of IP address that classifies the network for a specified host i.e., it tells us which network the host belongs to, generally comprised of one to up to four octets in dotted-decimal representation. 
 In dotted-decimal representation, an IP address is divided into four octets and based on which class the IP address belongs to its octets are further divided into network ID and HOST ID. 
 For Class A first octet represents network ID as the prefix of the first octet is 0, it uses the remaining 7 bits for network ID, for Class B first and second octets represent network ID the prefix for class B is 10 so it uses the remaining 14 bits for network ID, for Class C first, second and third octet represents network ID the prefix of class C is 110 so it uses the remaining 21 bits for network ID, Class D, and Class E are reserved.
