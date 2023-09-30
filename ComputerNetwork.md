@@ -13,7 +13,6 @@ Structure of IP Address:
 - Each number on the set may range from 0 to 255.
 - Total IP addresses range ranges from 0.0.0.0 to 255.255.255.255.
 - IP addresses are basically divided into two parts:
-
 1. Network ID
 2. Host ID
 
@@ -24,7 +23,7 @@ For Class A first octet represents network ID as the prefix of the first octet i
 
 
 
-Host ID:
+**Host ID:**
 It is the fragment of an IP address that uniquely classifies a host on a specified TCP/IP network. A host ID can be found simply by ANDing the IP address in binary form with its respective default subnet mask (in binary form). The other fragment of an IP address is the network ID, which identifies the network to which the host belongs.
 
 
