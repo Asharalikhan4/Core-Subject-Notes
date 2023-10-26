@@ -162,7 +162,7 @@ The working of IP addresses is similar to other languages. It can also use some 
 - Your IP address can change. For example, turning your router on or off can change your IP Address.
 - When you are out from your home location your home IP address doesn’t accompany you. It changes as you change the network of your device.
 
-Why use Private IP Address:
+**Why use Private IP Address:**
 
 - The purpose of Private IP addresses is to use IP addresses.
 - In every LAN network Private IP is used,same Private address can be used in other LANs because the scope of the LAN is local
